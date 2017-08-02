@@ -1,0 +1,7 @@
+<h1>main page</h1>
+
+<div class="house">
+<% @houses.each do |house| %>
+    <h3><%= link_to "#{house.name}", house_path(house) %></h3>
+<% end %>
+</div>

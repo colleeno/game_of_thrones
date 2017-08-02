@@ -1,0 +1,8 @@
+<h2>House <%= @house.name %></h2>
+
+
+<h3><%= @house.motto %></h3>
+
+<% @house.characters.each do |character| %>
+  <p><%= character.name %></p>
+<% end %>
