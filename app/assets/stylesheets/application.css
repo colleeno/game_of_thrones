@@ -30,7 +30,16 @@ a {
 }
 
 nav {
-  padding: 20px;
+  padding: 25px 10px;
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  z-index: 1;
+  background-color: rgba(38,38,38, 0.8);
+}
+
+main {
+  margin-top: 80px;
 }
 
 nav a {
@@ -232,6 +241,21 @@ input[type=submit]:hover {
 }
 
 .char h3 {
-  font-size: 22px;
+  font-size: 26px;
+  font-family: 'Cinzel', serif;
   color: #e6e6e6;
+}
+
+footer {
+  position: fixed;
+  bottom: 0px;
+  height:30px;
+  width:100%;
+  background:#999;
+}
+
+/********** MOBILE STYLES **********/
+
+@media screen and (max-width: 600px){
+
 }

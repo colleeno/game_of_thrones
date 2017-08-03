@@ -1,5 +1,7 @@
 <%=form_for [@house, @character] do |f|  %>
   <%= f.label :name %>
   <%= f.text_field :name %>
+  <%= f.label :quote %>
+  <%= f.text_field :quote %>
   <%= f.submit "Add Member" %>
 <% end %>
