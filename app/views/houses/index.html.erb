@@ -1,7 +1,13 @@
-<h1>main page</h1>
-
-<div class="house">
 <% @houses.each do |house| %>
-    <h3><%= link_to "#{house.name}", house_path(house) %></h3>
+  <div class="house-wrapper">
+    <a href = "/houses/<%= house.id %>">
+    <div class="house" style="background: url('<%= house.img_url %>'); background-size: 100%;
+    background-repeat: no-repeat; background-position: center center;">
+      <p> <%= "#{house.name}" %> </p>
+    </div>
+    </a>
+  </div>
 <% end %>
-</div>
+
+
+<%= link_to "create new house", new_house_path %>

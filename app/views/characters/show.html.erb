@@ -1,0 +1,6 @@
+
+<h2>House <%= @character.house.name %></h2>
+
+<h3><%= @character.name %></h3>
+
+<%= link_to "Update or Remove Character", edit_house_character_path(@house, @character)%>

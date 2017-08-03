@@ -8,12 +8,12 @@
 Character.destroy_all
 House.destroy_all
 
-stark = House.create(name: 'Stark', motto: 'Winter Is Coming', sigil: 'Direwolf', img_url: '')
-lannister = House.create(name: 'Lannister', motto: 'Hear Me Roar', sigil: 'Lion', img_url: '')
-targaryen = House.create(name: 'Targaryen', motto: 'Winter Is Coming', sigil: 'Direwolf', img_url: '')
-baratheon = House.create(name: 'Baratheon', motto: 'Ours Is The Fury', sigil: 'Crowned Stag', img_url: '')
-greyjoy = House.create(name: 'Greyjoy', motto: 'We Do Not Sow', sigil: 'Kraken', img_url: '')
-tyrell = House.create(name: 'Tyrell', motto: 'Growing Strong', sigil: 'Rose', img_url: '')
+stark = House.create(name: 'Stark', motto: 'Winter Is Coming', sigil: 'Direwolf', img_url: 'http://healthandperformanceupdate.com/wp-content/uploads/2015/12/wolf-dangerous-eyes.jpg')
+lannister = House.create(name: 'Lannister', motto: 'Hear Me Roar', sigil: 'Lion', img_url: 'https://lionscall.files.wordpress.com/2015/01/cropped-lion-roaring.jpg')
+targaryen = House.create(name: 'Targaryen', motto: 'Fire And Blood', sigil: 'Dragon', img_url: 'https://s-media-cache-ak0.pinimg.com/originals/e9/6b/4c/e96b4c1df8f78003eefc672e9efe37c5.jpg')
+baratheon = House.create(name: 'Baratheon', motto: 'Ours Is The Fury', sigil: 'Crowned Stag', img_url: 'http://i.imgur.com/OAemQRM.png')
+greyjoy = House.create(name: 'Greyjoy', motto: 'We Do Not Sow', sigil: 'Kraken', img_url: 'http://allswalls.com/images/octopus-tentacles-wallpaper-1.jpg')
+tyrell = House.create(name: 'Tyrell', motto: 'Growing Strong', sigil: 'Rose', img_url: 'http://i.imgur.com/CBPJidB.jpg')
 
 stark.characters.create(name: 'Eddard Stark', img_url: '', generation: 1)
 stark.characters.create(name: 'Catelyn Stark', img_url: '', generation: 1)

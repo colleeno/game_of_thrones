@@ -1,8 +1,26 @@
-<h2>House <%= @house.name %></h2>
+<div class="show-header">
+  <div class="show-img" style="background: url('<%= @house.img_url %>'); background-size: cover; 
+  background-repeat: no-repeat; background-position: right center;">
+  </div>
+  <div class="show-name">
+    <h2>House</h2> <h2><%= @house.name %></h2>
+  </div>
+</div>
 
-
-<h3><%= @house.motto %></h3>
-
-<% @house.characters.each do |character| %>
-  <p><%= character.name %></p>
-<% end %>
+<div class="show-content-wrapper">
+  <div class="show-content">
+    <h3 class="content-label">House Sigil</h3>
+      <p><%= @house.sigil %></p>
+    <h3 class="content-label">House Motto</h3>
+      <p><%= @house.motto %></p>
+    <h3 class="content-label">House Members</h3>
+    <div class="characters">
+    <% @house.characters.each do |character| %>
+      <p><%= link_to "#{character.name} ", house_character_path(@house, character) %></p>
+    <% end %>
+  </div>
+  <br>
+  <%= link_to "+ Add Characters", new_house_character_path(@house)%><br>
+  <%= link_to "Update or Remove House", edit_house_path(@house)%>
+  </div>
+</div>
