@@ -36,7 +36,11 @@ nav {
 nav a {
   font-size: 24px;
   color: #baad00;
-  font-family: "thrones";
+  font-family: "thrones", serif;
+}
+
+nav a:hover {
+  color: #877e00;
 }
 
 body {
@@ -72,6 +76,7 @@ body {
   text-transform: uppercase;
   font-family: 'Cinzel', serif;
 }
+
 
 .house-wrapper:hover .house,
 .house-wrapper:focus .house {
@@ -153,4 +158,65 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffd700', end
 
 .show-content a:hover {
   color: #877e00;
+}
+
+form {
+  background-color: #333333;
+  margin: 0 auto;
+  width: 80%;
+  padding: 30px;
+  text-align: center;
+}
+
+form label, form input {
+  display: block;
+  margin: 10px auto;
+}
+
+form label {
+  color: #baad00;
+  font-family: "thrones", serif;
+}
+
+input[type=text] {
+  padding: 10px;
+  border: 2px solid #666666;
+  background-color: #333333;
+  color: #e6e6e6;
+  font-family: 'Cinzel', serif;
+  font-size: 18px;
+  width: 250px;
+}
+
+input[type=submit] {
+  background-color: #baad00;
+  font-size: 16px;
+  color: #262626;
+  font-family: "thrones", serif;
+  cursor: pointer;
+  padding: 15px 0;
+  width: 250px;
+  border: none;
+}
+
+.delete {
+  margin-top: -40px;
+}
+
+input[type=submit]:hover {
+  background-color: #877e00;
+}
+
+.thrones-font {
+  font-family: "thrones", serif;
+  color: #baad00;
+  font-size: 20px;
+}
+
+.new-house, .new-house a {
+  font-family: 'Cinzel', serif;
+  color: white;
+  font-size: 30px;
+  display: block;
+  margin: 20px 0;
 }

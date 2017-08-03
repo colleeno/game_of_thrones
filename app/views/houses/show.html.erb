@@ -1,5 +1,5 @@
 <div class="show-header">
-  <div class="show-img" style="background: url('<%= @house.img_url %>'); background-size: cover; 
+  <div class="show-img" style="background: url('<%= @house.img_url %>'); background-size: cover;
   background-repeat: no-repeat; background-position: right center;">
   </div>
   <div class="show-name">
@@ -20,7 +20,6 @@
     <% end %>
   </div>
   <br>
-  <%= link_to "+ Add Characters", new_house_character_path(@house)%><br>
-  <%= link_to "Update or Remove House", edit_house_path(@house)%>
+  <%= link_to "+ Members", new_house_character_path(@house)%> <span class="thrones-font">|</span> <%= link_to "Edit House", edit_house_path(@house)%>
   </div>
 </div>

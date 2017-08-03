@@ -1,9 +1,5 @@
-<h2>add new</h2>
-
 <%=form_for [@house, @character] do |f|  %>
   <%= f.label :name %>
   <%= f.text_field :name %>
-  <%= f.label :img_url %>
-  <%= f.text_field :img_url %>
-  <%= f.submit "Add Character" %>
+  <%= f.submit "Add Member" %>
 <% end %>
