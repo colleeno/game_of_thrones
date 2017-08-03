@@ -1,0 +1,261 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+ @font-face {
+  font-family: "thrones";
+  src: font-url('game_of_thrones.ttf') format("truetype");
+}
+
+ * {
+   -moz-box-sizing: border-box; /* Firexfox */
+   -webkit-box-sizing: border-box; /* Safari/Chrome/iOS/Android */
+   box-sizing: border-box; /* IE */
+ }
+
+a {
+  text-decoration: none;
+}
+
+nav {
+  padding: 25px 10px;
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  z-index: 1;
+  background-color: rgba(38,38,38, 0.8);
+}
+
+main {
+  margin-top: 80px;
+}
+
+nav a {
+  font-size: 24px;
+  color: #baad00;
+  font-family: "thrones", serif;
+}
+
+nav a:hover {
+  color: #877e00;
+}
+
+body {
+  margin: 0 auto;
+  text-align: center;
+  background-color: #262626;
+}
+
+.house-wrapper {
+  width: 100%;
+  overflow: hidden;
+  margin: 5px 0;
+}
+
+.house {
+  width: 100%;
+  height: 100%;
+  padding: 28px;
+  opacity: 0.8;
+  transition: all 0.6s ease;
+}
+
+.house p {
+  display: inline-block;
+  margin: 0;
+}
+
+.house p, .house a {
+  color: rgb(255,255,255);
+  font-size: 40px;
+  text-decoration: none;
+  text-shadow: -1px 1px 3px black;
+  text-transform: uppercase;
+  font-family: 'Cinzel', serif;
+}
+
+
+.house-wrapper:hover .house,
+.house-wrapper:focus .house {
+  transform: scale(1.01);
+  opacity: 1;
+}
+
+.show-header {
+  height: 225px;
+  margin-bottom: 20px;
+}
+
+.show-img {
+  width: 50%;
+  float: left;
+  height: 100%;
+  border-right: 2px solid #262626;
+}
+
+.show-name {
+  width: 50%;
+  float: right;
+  height: 100%;
+  border-left: 2px solid #262626;
+  padding-top: 45px;
+  background: #ffd700;
+background: -moz-linear-gradient(top, #ffd700 0%, #baad00 45%, #877e00 100%);
+background: -webkit-linear-gradient(top, #ffd700 0%,#baad00 45%,#877e00 100%);
+background: linear-gradient(to bottom, #ffd700 0%,#baad00 45%,#877e00 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffd700', endColorstr='#877e00',GradientType=0 );
+}
+
+.show-name h2 {
+  font-family: "thrones";
+  color: #262626;
+  font-size: 40px;
+  margin: 5px;
+}
+
+.show-content-wrapper {
+  width: 90%;
+  margin: 0 auto;
+  background-color: #333333;
+  min-height: 400px;
+}
+
+.show-content {
+  text-align: left;
+  margin: 0 auto;
+  padding: 20px 0;
+  width: 70%;
+}
+
+.show-content p, .show-content a {
+  color: white;
+  text-decoration: none;
+  font-family: 'Cinzel', serif;
+  font-size: 20px;
+}
+
+.content-label {
+  font-family: "thrones";
+  border-bottom: 1px solid #877e00;
+  padding-bottom: 5px;
+  color: #877e00;
+}
+
+.characters {
+  display: flex;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.characters p {
+  margin: 0 10px 0 0;
+}
+
+.show-content a:hover {
+  color: #877e00;
+}
+
+form {
+  background-color: #333333;
+  margin: 0 auto;
+  width: 80%;
+  padding: 30px;
+  text-align: center;
+}
+
+form label, form input {
+  display: block;
+  margin: 10px auto;
+}
+
+form label {
+  color: #baad00;
+  font-family: "thrones", serif;
+}
+
+input[type=text] {
+  padding: 10px;
+  border: 2px solid #666666;
+  background-color: #333333;
+  color: #e6e6e6;
+  font-family: 'Cinzel', serif;
+  font-size: 18px;
+  width: 250px;
+}
+
+input[type=submit] {
+  background-color: #baad00;
+  font-size: 16px;
+  color: #262626;
+  font-family: "thrones", serif;
+  cursor: pointer;
+  padding: 15px 0;
+  width: 250px;
+  border: none;
+}
+
+.delete {
+  margin-top: -40px;
+}
+
+input[type=submit]:hover {
+  background-color: #877e00;
+}
+
+.thrones-font {
+  font-family: "thrones", serif;
+  color: #baad00;
+  font-size: 20px;
+}
+
+.new-house, .new-house a {
+  font-family: 'Cinzel', serif;
+  color: white;
+  font-size: 30px;
+  display: block;
+  margin: 20px 0;
+}
+
+.char {
+  text-align: center;
+}
+
+.char h2 {
+  font-size: 30px;
+  border-bottom: 1px solid #877e00;
+  padding-bottom: 10px;
+}
+
+.char h3 {
+  font-size: 26px;
+  font-family: 'Cinzel', serif;
+  color: #e6e6e6;
+}
+
+footer {
+  position: fixed;
+  bottom: 0px;
+  height:30px;
+  width:100%;
+  background:#999;
+}
+
+/********** MOBILE STYLES **********/
+
+@media screen and (max-width: 600px){
+
+}
