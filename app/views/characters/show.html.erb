@@ -1,6 +1,7 @@
-
-<h2>House <%= @character.house.name %></h2>
-
-<h3><%= @character.name %></h3>
-
-<%= link_to "Update or Remove Character", edit_house_character_path(@house, @character)%>
+<div class="show-content-wrapper">
+  <div class="show-content char">
+    <h2 class="thrones-font"><%= @character.name %></h2>
+    <h3 class="thrones-font">House <%= @character.house.name %></h3>
+    <%= link_to "Update or Remove Character", edit_house_character_path(@house, @character)%>
+  </div>
+</div>

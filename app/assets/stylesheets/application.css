@@ -220,3 +220,18 @@ input[type=submit]:hover {
   display: block;
   margin: 20px 0;
 }
+
+.char {
+  text-align: center;
+}
+
+.char h2 {
+  font-size: 30px;
+  border-bottom: 1px solid #877e00;
+  padding-bottom: 10px;
+}
+
+.char h3 {
+  font-size: 22px;
+  color: #e6e6e6;
+}
