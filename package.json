@@ -1,5 +1,9 @@
 {
   "name": "game_of_thrones",
   "private": true,
-  "dependencies": {}
+  "dependencies": {},
+  "devDependencies": {
+    "webpack": "^3.5.4",
+    "webpack-dev-server": "^2.7.1"
+  }
 }
