@@ -257,5 +257,16 @@ footer {
 /********** MOBILE STYLES **********/
 
 @media screen and (max-width: 600px){
+  .show-header {
+    height: 100px;
+  }
+
+  .show-name {
+    padding-top: 20px;
+  }
+
+  .show-name h2 {
+    font-size: 20px;
+  }
 
 }
