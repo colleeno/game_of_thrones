@@ -39,7 +39,7 @@ nav {
 }
 
 main {
-  margin-top: 80px;
+  margin-top: 107px;
 }
 
 nav a {
@@ -50,6 +50,34 @@ nav a {
 
 nav a:hover {
   color: #877e00;
+}
+
+.login {
+  padding: 10px 0 0 0;
+  margin: 0;
+}
+
+.login a {
+  font-size: 12px;
+  display: inline;
+}
+
+.nav-pipe {
+  color: #baad00;
+  font-size: 20px;
+  line-height: 1;
+}
+
+.devise-link {
+  color: #baad00;
+  font-family: 'Cinzel', serif;
+  display: inline-block;
+  padding: 10px;
+}
+
+.wide-button input {
+  min-width: 300px;
+  margin: 0 auto;
 }
 
 body {
@@ -163,6 +191,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffd700', end
 
 .characters p {
   margin: 0 10px 0 0;
+  padding-top: 5px;
+  border-bottom: 1px solid #877e00;
 }
 
 .show-content a:hover {
@@ -222,12 +252,12 @@ input[type=submit]:hover {
   font-size: 20px;
 }
 
-.new-house, .new-house a {
-  font-family: 'Cinzel', serif;
-  color: white;
+.new-house {
+  background-color: rgba(140, 140, 140, 0.5)
+}
+
+.new-house a {
   font-size: 30px;
-  display: block;
-  margin: 20px 0;
 }
 
 .char {
@@ -257,5 +287,15 @@ footer {
 /********** MOBILE STYLES **********/
 
 @media screen and (max-width: 600px){
+  .show-header {
+    height: 100px;
+  }
 
+  .show-name {
+    padding-top: 20px;
+  }
+
+  .show-name h2 {
+    font-size: 20px;
+  }
 }

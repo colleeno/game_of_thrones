@@ -5,15 +5,18 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+User.destroy_all
 Character.destroy_all
 House.destroy_all
 
-stark = House.create(name: 'Stark', motto: 'Winter Is Coming', sigil: 'Direwolf', img_url: 'http://healthandperformanceupdate.com/wp-content/uploads/2015/12/wolf-dangerous-eyes.jpg')
-lannister = House.create(name: 'Lannister', motto: 'Hear Me Roar', sigil: 'Lion', img_url: 'https://lionscall.files.wordpress.com/2015/01/cropped-lion-roaring.jpg')
-targaryen = House.create(name: 'Targaryen', motto: 'Fire And Blood', sigil: 'Dragon', img_url: 'http://i.imgur.com/Yltnzbk.jpg')
-baratheon = House.create(name: 'Baratheon', motto: 'Ours Is The Fury', sigil: 'Crowned Stag', img_url: 'http://i.imgur.com/OAemQRM.png')
-greyjoy = House.create(name: 'Greyjoy', motto: 'We Do Not Sow', sigil: 'Kraken', img_url: 'http://allswalls.com/images/octopus-tentacles-wallpaper-1.jpg')
-tyrell = House.create(name: 'Tyrell', motto: 'Growing Strong', sigil: 'Rose', img_url: 'http://i.imgur.com/CBPJidB.jpg')
+admin = User.create(email: 'colleenaoreilly@gmail.com', password: 'password', admin: true)
+
+stark = House.create(name: 'Stark', motto: 'Winter Is Coming', sigil: 'Direwolf', img_url: 'http://healthandperformanceupdate.com/wp-content/uploads/2015/12/wolf-dangerous-eyes.jpg', user: admin)
+lannister = House.create(name: 'Lannister', motto: 'Hear Me Roar', sigil: 'Lion', img_url: 'https://lionscall.files.wordpress.com/2015/01/cropped-lion-roaring.jpg', user: admin)
+targaryen = House.create(name: 'Targaryen', motto: 'Fire And Blood', sigil: 'Dragon', img_url: 'http://i.imgur.com/Yltnzbk.jpg', user: admin)
+baratheon = House.create(name: 'Baratheon', motto: 'Ours Is The Fury', sigil: 'Crowned Stag', img_url: 'http://i.imgur.com/OAemQRM.png', user: admin)
+greyjoy = House.create(name: 'Greyjoy', motto: 'We Do Not Sow', sigil: 'Kraken', img_url: 'http://allswalls.com/images/octopus-tentacles-wallpaper-1.jpg', user: admin)
+tyrell = House.create(name: 'Tyrell', motto: 'Growing Strong', sigil: 'Rose', img_url: 'http://i.imgur.com/CBPJidB.jpg', user: admin)
 
 stark.characters.create(name: 'Eddard Stark', img_url: '', generation: 1, quote: 'The man who passes the sentence should swing the sword.')
 stark.characters.create(name: 'Catelyn Stark', img_url: '', generation: 1, quote: 'Show them how it feels to lose what they love.')

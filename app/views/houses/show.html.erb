@@ -20,6 +20,10 @@
     <% end %>
   </div>
   <br>
+  <% if @house.user == current_user %>
   <%= link_to "+ Members", new_house_character_path(@house)%> <span class="thrones-font">|</span> <%= link_to "Edit House", edit_house_path(@house)%>
+  <% elsif current_user.try(:admin?) %>
+  <%= link_to "+ Members", new_house_character_path(@house)%> <span class="thrones-font">|</span> <%= link_to "Edit House", edit_house_path(@house)%>
+  <% end %>
   </div>
 </div>

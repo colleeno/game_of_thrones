@@ -9,8 +9,13 @@ class HousesController < ApplicationController
   end
   #create
   def create
-    @house = House.create!(house_params)
-    redirect_to house_path(@house)
+    # @house = House.create!(house_params)
+    @house = House.new(house_params.merge(user: current_user))
+    if @house.save
+      redirect_to house_path(@house)
+    else
+      render :new
+    end
   end
   #show
   def show

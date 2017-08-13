@@ -3,6 +3,10 @@
     <h2 class="thrones-font"><%= @character.name %></h2>
     <!-- <h3 class="thrones-font">House <%= @character.house.name %></h3> -->
     <h3 class="thrones-font">"<%= @character.quote %>"</h3>
-    <%= link_to "Update or Remove Character", edit_house_character_path(@house, @character)%>
+    <% if @character.house.user == current_user %>
+      <%= link_to "Update or Remove Character", edit_house_character_path(@house, @character)%>
+      <% elsif current_user.try(:admin?) %>
+      <%= link_to "Update or Remove Character", edit_house_character_path(@house, @character)%>
+      <% end %>
   </div>
 </div>
